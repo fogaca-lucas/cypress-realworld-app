@@ -1,4 +1,3 @@
-
 export function selectorsList() {
     return {
         usernameField: "[name='username']",
@@ -23,7 +22,7 @@ describe('Login com sucesso', () => {
     it('Deve fazer login com um usuário válido', () => {
         cy.visit('http://localhost:3000/signin');
         const selectors = selectorsList();
-        cy.get(selectorsList().usernameField).type("lucasfogaca")
+        cy.get(selectorsList().usernameField).type("lucasfogacabr")
         cy.get(selectorsList().passwordField).type("lucasfogaca123")
         cy.get(selectorsList().submitButton).click()
     })
